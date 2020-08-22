@@ -1,6 +1,6 @@
 total_bill = float(input('Total bill amount? '))
 level_of_service = input('Level of service? ')
-
+split_bill = int(input('Split how many ways? '))
 tip_amount = total_bill * (.10 or .20 or .15)
 total_amount = total_bill + tip_amount
 
@@ -14,3 +14,4 @@ else:
     tip_amount == (.10 * total_bill)
     print("Tip amount:" + str((.10 * total_bill)))
 print("Total amount: " + str(total_amount))
+print("Amount per person: " + str(total_bill / split_bill))
